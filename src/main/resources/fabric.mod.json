@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "jojosquared",
+	"version": "${version}",
+	"name": "JoJo Squared",
+	"description": "yare yare daze",
+	"authors": [
+		"Jolene",
+		"Tac"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/jojo-squared",
+		"sources": "https://github.com/jolenesjolene/JoJo-Squared"
+	},
+	"license": "MIT",
+	"icon": "assets/jojosquared/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jolene.jojosquared.JoJoSquared"
+		],
+		"fabric-datagen": [
+			"net.jolene.jojosquared.JoJoSquaredDataGenerator"
+		],
+		"client": [
+			"net.jolene.jojosquared.JoJoSquaredClient"
+		]
+	},
+	"mixins": [
+		"jojosquared.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
